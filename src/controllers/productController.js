@@ -56,7 +56,7 @@ export const uploadImageController = (req, res) => {
     res.json({
       message: 'Upload successful',
       filename: req.file.filename,
-      path: `/uploads/${folder}/${req.file.filename}`
+      path: req.file.path,
     });
   } catch (error) {
     console.error("Error uploading image:", error.message);
@@ -91,7 +91,7 @@ export const createProduct = async (req, res) => {
 
     const product = new Product({
       name,
-      image: req?.file ? "/uploads/" + req?.file.filename : '',
+      image: req?.file ? req?.file.path : '',
       brand,
       category,
       description,
