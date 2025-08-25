@@ -18,6 +18,6 @@ import mongoose from "mongoose";
 );
 
 
-const Cart = mongoose.model("Cart", cartItemSchemazy);
+const Cart = mongoose.model("Cart", cartItemSchema);
 
 export default User;
