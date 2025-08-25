@@ -87,12 +87,7 @@ export const createProduct = async (req, res) => {
       price,
       countInStock,
     } = req.body;
-    // console.log(`created Product: ${JSON.stringify(req.body)} and request filename: ${req?.file?.filename}`);
-    // const relativePath = path.relative(
-    //   path.join("http://localhost:5000",'uploads'), req?.file.path
-    // );
-
-    // console.log(`Relative Path: ${relativePath}`);
+   
 
     const product = new Product({
       name,

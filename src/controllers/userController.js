@@ -1,4 +1,4 @@
-import asyncHandler from "express-async-handler"; // to handle async errors
+import asyncHandler from "express-async-handler"; 
 import User from "../models/User.js";
 import generateToken from "../utils/generateToken.js";
 

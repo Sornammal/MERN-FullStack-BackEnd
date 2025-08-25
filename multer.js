@@ -60,6 +60,6 @@ export const getImage = (callback) => {
             filename => `/uploads/${filename}`
         );
 
-        return callback(null, { images: imageUrls }); // return result through callback
+        return callback(null, { images: imageUrls }); 
     });
 };
